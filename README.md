@@ -6,7 +6,7 @@ existing services.
 It requires two things - the hostname and the Basic Auth header and then
 it is good to go. To generate the basic auth:
 
-`echo "username:password" | openssl enc -base64`
+`echo -n "username:password" | openssl enc -base64`
 
 Then pop that in set header Authorization following the word Basic. That's it.
 
